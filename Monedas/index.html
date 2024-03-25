@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Convertidor de monedas</title>
+    <link rel="stylesheet" type="text/css" href="style/resect.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="js/conv.js"></script>
+</head>
+
+<body>
+<header class="Titulo">
+    <h1 class="Titulo_h1">Conversion de Monedas</h1>
+    <div>
+        <img class="Titulo_img" src="data/icos.png">
+    </div>
+</header>
+
+<aside>
+    <div class="formulario">
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" required inputmode="numeric" pattern="[^\d]*">
+
+        <div>
+            <label for="de">De:</label>
+            <select id="de" name="de" required>
+                <option value="dolar">USD</option>
+                <option value="euro">EUR</option>
+                <option value="pesoMx">MXN</option>
+                <option value="yen">JPY</option>
+                <option value="yuan">CNY</option>
+            </select>
+            <label for="a">A:</label>
+            <select id="a" name="a" required>
+                <option value="dolar">USD</option>
+                <option value="euro">EUR</option>
+                <option value="pesoMx">MXN</option>
+                <option value="yen">JPY</option>
+                <option value="yuan">CNY</option>
+            </select>
+        </div>
+        <div class="botones">
+            <button class="BotonComvertir" type="submit" onclick="ConvertidorMonedas()">Convertir</button>
+            <button class="BotonComvertir" onclick="limpiarDatosFormulario()">Limpiar</button>
+        </div>
+
+    </div>
+</aside>
+<img class="Img_fondo" src="data/Conver.png">
+
+
+<div class="window-notice" id="window-notice">
+    <div class="content">
+        <div>
+            <label class="ResultadoCovercion" id="ResultadoCovercion"> </label>
+            <button class="ResultadoCovercion " id="CerrarVentana">Cerrar</button>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
