@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Convertidor de monedas</title>
+    <link rel="stylesheet" type="text/css" href="style/resect.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="js/RamdonXd.js"></script>
+</head>
+
+<body>
+
+<header class="Titulo">
+    <h1 class="Titulo_h1">Mentalista</h1>
+    <div>
+        <img class="Titulo_img" src="../data/icos.png">
+    </div>
+</header>
+
+<aside>
+    <div class="MenuDeEnviar">
+        <label>Cantidad de Intentos</label>
+        <input style="margin:15px;pointer-events: none" class="NumeroIngresado" id="CatidadInt" value="0"></input>
+        <label>Ingrese su Numero</label>
+        <input class="NumeroIngresado" type="number" id="NumeroIngesado">
+        <input class="EnviarDato" type="submit" value="Enviar" onclick="Adivinar()">
+    </div>
+</aside>
+<img class="Img_fondo" src="../data/cerebroxd.png">
+
+
+<div class="window-notice" id="window-notice">
+    <div class="content">
+        <div>
+            <label class="ResultadoCovercion" id="ResultadoCovercion">Ganador</label>
+            <label style="margin-top: 30px" class="ResultadoCovercion" id="CantVecesGa"></label>
+            <button style="margin-top: 30px" class="ResultadoCovercion " id="CerrarVentana">Cerrar</button>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

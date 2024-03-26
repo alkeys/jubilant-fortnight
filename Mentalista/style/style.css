@@ -1,12 +1,11 @@
 body {
-    background-image: url("../../data/Background.png");
+    background-image: url("../../data/background_mentalista.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 header {
-    background-color: #333;
     color: white;
     padding: 10px;
     text-align: center;
@@ -32,7 +31,6 @@ header {
 }
 
 aside {
-    background-color: #333;
     color: white;
     padding: 10px;
     text-align: center;
@@ -40,78 +38,59 @@ aside {
     justify-content: center;
 }
 
-.formulario {
-    color: #010101;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    text-align: center;
+.MenuDeEnviar {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #dcdcd1;
-    padding: 10px;
-    width: 30%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px black;
-}
-
-.formulario:hover {
-    filter: drop-shadow(8px 8px 10px black);
-    transition: filter 0.5s;
-}
-
-.botones{
-    display: flex;
-    flex-direction: row;
-}
-
-#cantidad {
+    color: #eae8ed;
     text-align: center;
-    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.CatidadInt {
+    margin: 10px;
+}
+
+.NumeroIngresado {
     height: 30px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px black;
+    text-align: center;
+}
+.NumeroIngresado:hover{
+    box-shadow: 5px 5px 10px #ab9e9e;
+}
+
+.EnviarDato {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
     margin: 10px;
     border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
 
 }
 
-select {
-    width: 100%;
-    height: 30px;
-    margin: 10px;
-    border-radius: 5px;
+.EnviarDato:hover {
+    box-shadow: 5px 5px 10px #6a6262;
+    transition: 0.1s;
 }
 
-select:hover, #cantidad:hover {
-    filter: drop-shadow(8px 8px 10px #50465d);
-    transition: filter 0.5s;
-}
 
 .Img_fondo {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     object-fit: contain;
-}
+    filter: drop-shadow(8px 8px 10px #faf0f0);
+    mask-repeat: repeat-x;
 
-.BotonComvertir {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px black;
-}
-
-.BotonComvertir:hover {
-    filter: drop-shadow(8px 8px 10px black);
-    transition: filter 0.5s;
 }
 
 .Img_fondo:hover {
@@ -120,22 +99,11 @@ select:hover, #cantidad:hover {
 }
 
 
-.window-notice {
-    background: rgba(33, 41, 52, .85);
-    left: 0;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    display: flex;
-    position: fixed;
-    z-index: 999;
-}
-
 #window-notice {
     display: none;
 }
 
-#CerrarVentana{
+#CerrarVentana {
     margin-top: 10px;
 }
 
@@ -155,6 +123,17 @@ select:hover, #cantidad:hover {
     font-size: 1.3rem;
 }
 
+.window-notice {
+    background: rgba(33, 41, 52, .85);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+}
+
 .ResultadoCovercion {
     color: #010101;
     font-family: 'Times New Roman', Times, serif;
@@ -171,3 +150,7 @@ select:hover, #cantidad:hover {
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
 }
+
+
+
+

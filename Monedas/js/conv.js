@@ -17,6 +17,8 @@
 `----'         \  ' ;         `--`---'                        `----'      \  ' ;
                 `--`                                                       `--`
 */
+
+
 function  ConvertidorMonedas(){
     var cantidad = parseFloat(document.getElementById("cantidad").value);
     var monedaOrigen = document.getElementById("de").value;
@@ -35,10 +37,12 @@ function  ConvertidorMonedas(){
     elementoVentas.style.display = "flex";
 
 }
-function cerrarVentana(){
+ function cerrarVentana(){
     var elementoVentas= document.getElementById("window-notice");
     elementoVentas.style.display = "none";
 }
+
+
 
 function limpiarDatosFormulario(){
     document.getElementById("cantidad").value="";
