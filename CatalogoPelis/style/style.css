@@ -1,0 +1,154 @@
+body {
+    background-image: url("../../data/background-aluraflix.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.Titulo_h1 {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}
+
+#Titulo_img {
+    width: 15%;
+    height: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Titulo_img:hover, .Titulo_h1 {
+    filter: drop-shadow(8px 8px 10px black);
+}
+
+aside {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+}
+
+
+.CatalogoLista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    object-fit: cover;
+}
+
+.imagenCatalogo {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.imagenCatalogo:hover {
+    box-shadow: 5px 5px 10px #6a6262;
+    transition: 0.1s;
+}
+
+.contenido {
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.BotonXd {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+
+}
+
+.BotonXd:hover {
+    box-shadow: 5px 5px 10px #6a6262;
+    transition: 0.1s;
+}
+
+
+#window-notice {
+    display: none;
+}
+
+#CerrarVentana {
+    margin-top: 10px;
+}
+
+.window-notice .content {
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 600px;
+    min-width: 320px !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
+.window-notice {
+    background: rgba(33, 41, 52, .85);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+}
+
+.AgregarPeli {
+    color: #010101;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dcdcd1;
+    padding: 10px;
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+
+
+
